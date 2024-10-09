@@ -1,0 +1,109 @@
+/* Google Fonts Import */
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+:root {
+  --bg-gradient: linear-gradient(160deg, hsl(43, 82%, 60%), hsl(152, 8%, 57%));
+  --bg-white: hsl(0, 0%, 100%);
+  --bg-yellow-500: hsl(49, 90%, 66%);
+  --bg-yellow-300: hsl(64, 71%, 61%);
+  --shadow: 0 5px 10px rgba(0, 0, 0, 0.35);
+  --sm-radius: 8px;
+  --btn-gradient: linear-gradient(135deg, hsl(49, 90%, 66%), hsl(64, 71%, 61%));
+}
+
+.btn {
+  display: inline-block;
+  border: 0;
+  outline: 0;
+  background: var(--btn-gradient);
+  border-radius: var(--sm-radius);
+  padding: 1em 1.75em;
+  box-shadow: var(--shadow);
+  transition: opacity .3s ease-in-out;
+  cursor: pointer;
+  font-weight: 900;
+}
+
+.btn:hover{
+    opacity: .6;
+}
+
+body {
+  min-height: 100vh;
+  background: var(--bg-gradient);
+  line-height: 1.5;
+  padding-inline: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(1rem, -1.6129032258064515rem + 5.161290322580645vw, 1.65rem);
+}
+
+#form {
+  background: var(--bg-white);
+  padding-block: 1.2em;
+  padding-inline: 1.8em;
+  box-shadow: var(--shadow);
+  border-radius: var(--sm-radius);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75em;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.15em;
+}
+
+.form-group label {
+  font-weight: 500;
+}
+
+.form-group input {
+  font-weight: 400;
+  border: 0;
+  border-bottom: 1px solid var(--bg-yellow-500);
+  padding-block: 0.75em;
+  outline: 0;
+  font-size: clamp(1.12rem, 0.975rem + 0.75vw, 1.25rem);
+  transition: border-bottom .3s ease-in-out;
+}
+
+.form-group input:focus {
+    border-bottom: 2px solid var(--bg-yellow-300);
+}
+
+select{
+    padding: .85em .5em;
+    background: var(--bg-gradient);
+    outline: 0;
+    border: 0;
+    border-radius: var(--sm-radius);
+    font-weight: 700;
+    box-shadow: var(--shadow);
+    cursor: pointer;
+}
+
+
+section{
+    margin-block-start: 1.4em;
+    padding-block: .85em;
+    padding-inline: 1.25em;
+    background: var(--bg-white);
+    box-shadow: var(--shadow);
+    border-radius: var(--sm-radius);
+}

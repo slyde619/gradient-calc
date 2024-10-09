@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calc</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main>
+        <form id="form">
+            <div class="form-group">
+                <label for="firstInput">Enter First Number:</label>
+                <input type="number" placeholder="Enter a value" id="firstInput" required>
+            </div>
+            <select name="operator" id="operator">
+                <option value="add">Add</option>
+                <option value="multiply">Multiply</option>
+                <option value="subtract">Subtract</option>
+                <option value="divide">Divide</option>
+                <option value="exponent">Exponent</option>
+            </select>
+
+            <div class="form-group">
+                <label for="secondInput">Enter Second Number:</label>
+                <input type="number" placeholder="Enter a value" id="secondInput" required>
+            </div>
+            <button type="submit" id="calculateBtn" class="btn">Calculate</button>
+        </form>
+
+        <section>
+            <h2 class="resultEl">Result: <span></span></h2>
+        </section>
+    </main>
+    
+    <script src="app.js"></script>
+</body>
+</html>
